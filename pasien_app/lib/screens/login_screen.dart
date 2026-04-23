@@ -256,7 +256,7 @@ class _LoginScreenState extends State<LoginScreen>
                         const SizedBox(height: 8),
 
                         const Text(
-                          "© 2026 Sistem Informasi Klinik By Team 7",
+                          "© 2026 Sistem Informasi Klinik By Cyber_Trihexha",
                           style: TextStyle(
                             fontSize: 12,
                             color: Colors.black45,
