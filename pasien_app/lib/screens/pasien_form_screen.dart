@@ -125,7 +125,7 @@ class _PasienFormScreenState extends State<PasienFormScreen> {
               const SizedBox(height: 12),
 
               DropdownButtonFormField<String>(
-                value: jk,
+                initialValue: jk,
                 decoration: const InputDecoration(
                   labelText: "Jenis Kelamin",
                   border: OutlineInputBorder(),

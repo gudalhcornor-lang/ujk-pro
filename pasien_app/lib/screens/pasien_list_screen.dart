@@ -105,7 +105,7 @@ class _PasienListScreenState extends State<PasienListScreen> {
                 const SizedBox(height: 12),
 
                 DropdownButtonFormField<String>(
-                  value: filterJk,
+                  initialValue: filterJk,
                   decoration: InputDecoration(
                     prefixIcon: const Icon(Icons.people),
                     border: OutlineInputBorder(
@@ -216,7 +216,9 @@ class _PasienListScreenState extends State<PasienListScreen> {
                                   ),
                                 );
                                 if (result ==
-                                    true) refresh();
+                                    true) {
+                                  refresh();
+                                }
                               } else {
                                 await PasienService()
                                     .deletePasien(
