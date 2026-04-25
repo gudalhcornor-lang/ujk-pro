@@ -5,6 +5,7 @@ import '../models/pasien.dart';
 import 'pasien_form_screen.dart';
 import 'pasien_list_screen.dart';
 import 'login_screen.dart';
+import 'resep_obat.dart';
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});
@@ -157,6 +158,21 @@ class DashboardScreen extends StatelessWidget {
                   );
                 },
               ),
+              _menuCard(
+                context,
+                title: "Resep Obat",
+                subtitle: "Kelola resep obat pasien",
+                icon: Icons.medical_services,
+                color: Colors.green,
+                onTap: () {
+                Navigator.push(
+                context,
+                MaterialPageRoute(
+                 builder: (_) => const ResepObatForm(),
+      ),
+    );
+  },
+),
             ],
           );
         },
